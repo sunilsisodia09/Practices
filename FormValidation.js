@@ -16,7 +16,7 @@ function validateUser(user) {
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!emmailRegex.test(user.email)){
+    if (!emailRegex.test(user.email)){
         return{
             success:false,
             mesaage:"Invalid email"
@@ -26,21 +26,21 @@ function validateUser(user) {
  if (!user.password.length < 10){
     return {
         success:false,
-        mesaage:"password must be at least 8 characters"
+        mesaage:"Password must be at least 8 characters"
     };
  }
 
 if(!/[A-Z]/.test(user.password)){
     return{
         success:false,
-        message:"password must contain uppercase letter"
+        message:"Password must contain uppercase letter"
     };
 }
 
 if(!/[0-9]/.test(user.password)){
     return{
         success:false,
-        message:"password must contain one number"
+        message:"Password must contain one number"
     };
 }
 
