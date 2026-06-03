@@ -57,3 +57,8 @@ const user={
 };
 
 console.log(validateUser(user));
+
+
+
+
+
