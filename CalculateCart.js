@@ -8,16 +8,15 @@ function calculateTotal(cart){
      let discount = 0;
       
     if(subtital > 50000){
-        discount = subtoatal *0.10 ;
+        discount = subtoatal *0.10;
     }
 
     let finalAmount = subtotal -discount;
 
     return{
          subtotal,
-        discount,
-        finalAmount
+         discount,
+         finalAmount
     };
        
-    
 }
